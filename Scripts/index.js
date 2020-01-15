@@ -1,12 +1,12 @@
 const express = require("express");
-const server = express();
+const app = express();
 
 // Query params = ?teste=1 (sempre aparece no URL do navegador)
 // Route Params = /users/1 (1 é o ID do usuario)
 // Request body = {"name": "Jean", "email":"jean@jean.com"}
 
-server.get("/teste", (res, req) => {
-  return req.send("Hello World");
+app.get("/teste", (res, req) => {
+  return req.send("Hello Worlddddd");
 });
 
-server.listen(3000);
+app.listen(3000);
