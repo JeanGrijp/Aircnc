@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-
 const SpotSchema = new mongoose.Schema({ 
     thumbnail: String,
     company: String,
@@ -11,4 +10,4 @@ const SpotSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model("Spot", UserSchema)
+module.exports = mongoose.model("Spot", SpotSchema)
